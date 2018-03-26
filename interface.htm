@@ -1,0 +1,54 @@
+<html>
+<head>
+    <style>
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+    <title> Password Manager</title>
+</head>
+<script type="text/javascript" src="background.js">
+</script>
+<script>
+//function Details() {
+       // var a = document.getElementById("user");
+       // a.value = localStorage.getItem("username");
+
+        //var b = document.getElementById("password");
+        //  b.value = pass;
+   //s }
+</script>
+<h4>
+   
+    <img src="Extension.png" height=25 width=25 align="left">Password Manager
+</h4>
+<hr>
+
+<body style="background-color:rgba(9, 9, 85, 0.164);">
+    <p class="sansserif" style="font-size:17px;"> Do you want to save your password ?
+        <p style="font-size:14px;">
+            <p> Username : <input type="text" id="user" value></p>
+            Password: <input type="password" value="Watever_password_is" id="myInput">
+           <input type="checkbox" onclick="myFunction()">Show Password 
+           <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+            </script>
+            <p><form action="interface2.htm">
+                <button>Save</button>
+            </form> <button>Never</button></p> 
+            </p>
+        
+</body>
+</html>
