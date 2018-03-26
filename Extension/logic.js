@@ -1,9 +1,9 @@
+var email; //declared global
+var pass;
 document.addEventListener('DOMContentLoaded', function() {
     var checkPageButton = document.getElementById('save');
     checkPageButton.addEventListener('click', function() {
-
-
-        var text = document.getElementById('user').value = "your email";
-
+        email = chrome.runtime.sendMessage(document.getElementById('user').value);
+        pass = chrome.runtime.sendMessage(document.getElementById('pswd').value);
     }, false);
 }, false);
