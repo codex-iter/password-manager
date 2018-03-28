@@ -9,12 +9,12 @@ function popup() {
         chrome.tabs.sendMessage(activeTab.id, msg);
     });
 }
-
 document.addEventListener('DOMContentLoaded', function() {
     var checkPageButton = document.getElementById('save');
     checkPageButton.addEventListener('click', function() {
-        var email = chrome.runtime.sendMessage(document.getElementById('user').value);
-        var pass = chrome.runtime.sendMessage(document.getElementById('pswd').value);
+        var email = document.getElementById('user').value;
+        var pass = document.getElementById('pswd').value;
+        localStorage.setItem(email, pass);
     }, false);
 }, false);
 document.addEventListener("DOMContentLoaded", function() {
