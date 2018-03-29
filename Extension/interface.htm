@@ -13,7 +13,9 @@
     </style>
     <title> Password Manager</title>
 </head>
-
+<script src="require.js" data-main="logic.js"></script>
+</head>
+<script type="text/javascript" src="myscript.js"></script>
 <h4>
     <img src="Extension.png" height=25 width=25 align="left">Password Manager
 </h4>
@@ -24,10 +26,10 @@
         <p style="font-size:14px;">
             <input type="button" id="save" value="Save">
             <input type="button" id="never" value="Never">
-            <p> Username : <input id="user" type="text" /></p>
-            <p> Password : <input id="target" type="text"></p>
+            <p> Username : <input type="text" id="user" value></p>
+            <p> Password : <input type="password" id="pswd" value></p>
 
-        </p>
+
 </body>
 
 </html>
