@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPageButton.addEventListener('click', function() {
         var email = document.getElementById('user').value;
         var pass = document.getElementById('pswd').value;
-        localStorage.setItem(email, pass);
+         var hash = CryptoJS.SHA3(pass);
+         localStorage.setItem(email, hash);
     }, false);
 }, false);
 document.addEventListener("DOMContentLoaded", function() {
