@@ -13,7 +13,8 @@
     <title> Password Manager</title>
 </head>
 
-<script type="text/javascript" src="background.js">
+<script type="text/javascript" src="background.js"></script>
+<script src="logic.js">
 </script>
 <h4>
     <img src="Extension.png" height=25 width=25 align="left">Password Manager
@@ -23,9 +24,19 @@
 <body style="background-color:rgba(9, 9, 85, 0.164);">
     <p class="sansserif" style="font-size:17px;"> Save your passwords for this site:
         <p style="font-size:14px;">
-            <p> Username : <input type="text" id="user" value></p>
-            <p> Password : <input type="text" id="password" value></p>
-            <input type="button" id="Manage Passwords" value="Manage">
+            <form action="#">
+                    <label>
+                    Username:
+                    <input name="user" type="text" id="user" readonly="readonly" />
+                    Password : <input name="pswd" type="password" id="pswd" value />
+                    </label>
+                    <script type="text/javascript">
+                     var storedVal = document.getElementById("user");
+                        storedVal.value = localStorage.getItem("user");
+                        storedVal2=document.getElementById("pswd");
+                        storedVal2.value=localStorage.getItem("pswd");
+                    </script>
+                    </form>
             <input type="button" id="Ok" value="Okay">
         </p>
 </body>
