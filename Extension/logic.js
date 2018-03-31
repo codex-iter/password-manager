@@ -1,4 +1,3 @@
-
 function popup() {
     chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
         var activeTab = tabs[0];
@@ -14,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var checkPageButton = document.getElementById('save');
     checkPageButton.addEventListener('click', function() {
             var email = document.getElementById('user').value;
+            var pass = document.getElementById('pswd').value;
             if (localStorage.key(email)) {
                 var pass = document.getElementById('pswd').value = localStorage.getItem(email);
             } else {
-                var pass = document.getElementById('pswd').value;
                 localStorage.setItem(email, pass);
             }
         },
