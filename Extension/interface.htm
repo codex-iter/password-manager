@@ -12,26 +12,31 @@
         }
     </style>
     <title> Password Manager</title>
+
+
 </head>
 <script type="text/javascript" src="logic.js">
 </script>
 <script src="showpwsd.js"></script>
-<script type="text/javascript" src="myscript.js "></script>
-
+<script type=" text/javascript " src="myscript.js "></script>
 <h4>
     <img src="Extension.png " height=25 width=25 align="left ">Password Manager
 </h4>
 <hr>
 
 <body style="background-color:rgba(9, 9, 85, 0.164); ">
-    <p class="sansserif " style="font-size:17px; "> Do you want to save your password for this site ?
-        <p style="font-size:14px; ">
-            <input type="button" id="save" value="Save">
+    <p class="sansserif " style="font-size:17px; "> Do you want to save your password ?
+        <p style="font-size:14px;">
+            <form action="interface2.htm" method="get">
+                <label> 
+                          <p> <input  type="text" id="user" placeholder="Username"/></p> 
+                           <p> <input  type="password" id="pswd" placeholder="Password"/></p>
+                    </label>
+                <input type="submit" id="save" value="Save" />
+            </form>
             <input type="button" id="never" value="Never">
-            <p><input type="text" id="user" value placeholder="Username"><br></p>
-            <input type="password" id="pswd" placeholder="Password"><br>
-            <input type="checkbox" id="chkbx">showpassword
-        </p>
+            <input type="checkbox" id="chkbx">Show Password</p>
+
 </body>
 
 </html>
