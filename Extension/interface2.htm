@@ -13,28 +13,30 @@
     </style>
     <title> Password Manager</title>
 </head>
-
+<link rel="stylesheet" href="interface2.css">
 <script type="text/javascript" src="background.js">
 </script>
 <script type="text/javascript" src="logic2.js"></script>
 </script>
 <h4>
-    <img src="Extension.png" height=25 width=25 align="left">Password Manager
+    <img src="Extension.png" height=25 width=25 align="left"><font color="white">Password Manager</font>
 </h4>
 <hr>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<body style="background-color:rgba(9, 9, 85, 0.164);">
-    <p class="sansserif" style="font-size:17px;"> Save your passwords for this site:
+<body style="background-color:rgba(4, 4, 20, 0.863);">
+    <p class="sansserif" style="font-size:17px;"> <font color="white">Your Password is Saved!</font>
         <p style="font-size:14px;">
             <form action="#">
                 <label>
-                    Username:
+                    <font color="white"> Username:</font>
                     <input name="user" type="text" id="user" readonly="readonly" />
-                    Password : <input name="pswd" type="password" id="pswd" readonly="readonly"/>                    
+                    <font color="white"> Password :</font>
+                    <input name="pswd" type="password" id="pswd" readonly="readonly"/> 
+                    <p><input type="button" id="Ok" value="Okay"></p>                  
                 </label> </form>
-            <input type="button" id="Ok" value="Okay">
+            
         </p>
 </body>
 
