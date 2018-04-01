@@ -14,10 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPageButton.addEventListener('click', function() {
             var email = document.getElementById('user').value;
             var pass = document.getElementById('pswd').value;
-            if (localStorage.key(email)) {
-                var pass = document.getElementById('pswd').value = localStorage.getItem(email);
-            } else {
+            if (!localStorage.key(email)) {
                 localStorage.setItem(email, pass);
+            }
+            if (localStorage.key(email)) {
+                if (pass == 0) {
+                    document.getElementById('pswd').value = localStorage.getItem(email);
+                } else {
+                    localStorage.setItem(email, pass);
+                }
             }
         },
         false);
