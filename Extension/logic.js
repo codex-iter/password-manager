@@ -1,5 +1,5 @@
-function popup() {
-    chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
+/*function popup() {
+    chrome.tabs.query({ currentWindow: true, active: true, 'lastFocusedWindow': true }, function(tabs) {
         var activeTab = tabs[0];
         let msg = {
             message: "start",
@@ -7,6 +7,19 @@ function popup() {
             pass: document.getElementById('pswd').value
         }
         chrome.tabs.sendMessage(activeTab.id, msg);
+    });
+}*/
+function popup() {
+    chrome.tabs.query({ currentWindow: true, pinned: true }, function(tabs) {
+        tabs.forEach(function(tab) {
+            console.log('Tab URL: ', tab.url);
+            let msg = {
+                message: "start",
+                email: document.getElementById('user').value,
+                pass: document.getElementById('pswd').value
+            }
+            chrome.tabs.sendMessage(tab.id, msg);
+        });
     });
 }
 document.addEventListener('DOMContentLoaded', function() {
