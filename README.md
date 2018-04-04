@@ -17,4 +17,5 @@ informations,you just need to enter the ID and the password gets autofilled.
 
 * Go the website-->> Open Extension -->> Enter your information and login!
 
-![screen1](https://user-images.githubusercontent.com/30324086/38336258-c9d45728-387e-11e8-9fd5-5aa75dfc22dc.png)
+
+![screenshot1](https://user-images.githubusercontent.com/30324086/38336586-e7f151d8-387f-11e8-9400-212c65c4b9d2.png)
