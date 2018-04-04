@@ -1,20 +1,20 @@
-# password-manager
+Password Manager
+----------------
+
 A Chrome based Password Manager Extension that stores your Password and logs in for you.
 It grabs your login information,stores your ID and password(encrypted) in the local storage of the Extension.For the saved login 
 informations,you just need to enter the ID and the password gets autofilled.
 
-#Download or Clone the Extension files.
+### Steps to Install
 
-#Open Chrome Browser.
+* Download or Clone the Extension files.
 
-#Toggle Button -->> More Tools -->> Extensions -->> Load Unpacked Extensions -->> Add the Extension Files.
+* Open Chrome Browser.
 
-#The Extension Icon gets added to the right side of the address bar.
+* Toggle Button -->> More Tools -->> Extensions -->> Load Unpacked Extensions -->> Add the Extension Files.
 
-#The stored Login Information of the user can be viewed in the Local Storage of the Extension.
+* The Extension Icon gets added to the right side of the address bar.
 
+* Go the website-->> Open Extension -->> Enter your information and login!
 
-
-
-
-![screen-shot](https://user-images.githubusercontent.com/32352500/37450168-f13ec938-2852-11e8-866b-40d3df82c21b.png)
+![screen1](https://user-images.githubusercontent.com/30324086/38336258-c9d45728-387e-11e8-9fd5-5aa75dfc22dc.png)
