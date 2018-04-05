@@ -1,19 +1,19 @@
 {
-    "manifest_version":2,
-    "name":"PWStorage_Extension",
-    "description":"Stores Passwords",
-    "version":"1.0",
-    "browser_action":{
-        "default_icon":"Extension.png",
-        "default_popup":"interface.htm"
+    "manifest_version": 2,
+    "name": "PWStorage_Extension",
+    "description": "Stores Passwords",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "Extension.png",
+        "default_popup": "interface.htm"
     },
-   "permissions": [
-        "storage"
+    "permissions": [
+        "storage",
+        "tabs"
     ],
-    "background": {
-        "scripts": ["background.js"]
-    },
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
         "js": ["myscript.js"]
-    }]}
+    }]
+
+}

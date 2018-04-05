@@ -1,6 +1,13 @@
-/*var pass = chrome.runtime.sendMessage(document.getElementById("pass").value = "12456789" &&
-    document.getElementById("email").value); //for facebook*/
-chrome.runtime.sendMessage(document.getElementById("email").value);
-//var email = ; //for facebook
-//document.getElementById("session_password-login").value;//for linkedin
-//document.getElementById("login-password").value;// for linkedin
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        if (document.getElementsByTagName('title')[0].innerHTML == "Facebook – log in or sign up") {
+            request.message === "start"
+            document.getElementById('email').value = request.email;
+            document.getElementById('pass').value = request.pass;
+
+        } else if (document.getElementsByTagName('title')[0].innerHTML == "LinkedIn: Log In or Sign Up") {
+            request.message === "start"
+            document.getElementById('login-email').value = request.email;
+            document.getElementById('login-password').value = request.pass;
+        }
+    });
