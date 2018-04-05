@@ -13,7 +13,7 @@
     </style>
     <title> Password Manager</title>
 
-
+    <link rel="interface.css" href="styles.css">
 </head>
 <script type="text/javascript" src="logic.js">
 </script>
@@ -25,10 +25,9 @@
 <hr>
 
 <body style="background-color:rgba(4, 4, 20, 0.863); ">
-    <p class="sansserif " style="font-size:17px; ">
-        <font color="white">Do you want to save your password ?</font>
+    <p class="sansserif " style="font-size:17px; "> <font color="white">Do you want to save your password ?</font>
         <p style="font-size:14px;">
-            <form>
+            <form action="interface2.htm" method="get">
                 <label> 
                           <p><font color="white"> <input  type="text" id="user" placeholder="Username"/></font></p> 
                            <p> <font color="white"><input  type="password" id="pswd" placeholder="Password"/></font></p>
@@ -36,9 +35,9 @@
                     </label>
                 <input type="submit" id="save" value="Save" />
                 <font color="white"><input type="button" id="never" value="Never">
-
             </form>
-
+           
+           
 
 </body>
 
