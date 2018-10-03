@@ -1,5 +1,9 @@
-Password Manager
-----------------
+
+![](https://img.shields.io/badge/html-5-blue.svg?style=for-the-badge)
+![](https://img.shields.io/badge/javascript-blue.svg?style=for-the-badge)
+# Password-Manager
+### A password manager that stores your password and logs in for you.
+
 
 A Chrome based Password Manager Extension that stores your Password and logs in for you.
 It grabs your login information,stores your ID and password(encrypted) in the local storage of the Extension.For the saved login 
@@ -19,3 +23,4 @@ informations,you just need to enter the ID and the password gets autofilled.
 
 
 ![screenshot1](https://user-images.githubusercontent.com/30324086/38336586-e7f151d8-387f-11e8-9400-212c65c4b9d2.png)
+
