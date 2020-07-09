@@ -11,9 +11,6 @@
         "storage",
         "tabs"
     ],
-    "background": {
-        "scripts": ["background.js"]
-    },
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
         "js": ["myscript.js", "myscript1.js"]
